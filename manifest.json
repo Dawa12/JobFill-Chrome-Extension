@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Jobvite Autopopulate",
+  "name": "JobFill",
   "version": "1",
-  "description": "Extension will autopopulate jobvite applications",
+  "description": "Extension will autopopulate job applications",
   "content_scripts": [{
     "js": ["jquery-3.2.0.min.js", "js/content.js"],
     "matches": ["*://*/jobs*"],
