@@ -1,0 +1,13 @@
+html {
+  width: 200px;
+  height: 630px;
+}
+
+body {
+  background-color: lightblue;
+}
+
+input, select {
+  display: block;
+  margin-bottom: 7px;
+}
