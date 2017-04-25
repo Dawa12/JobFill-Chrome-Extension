@@ -5,19 +5,19 @@
   "version": "1",
   "description": "Extension will autopopulate jobvite applications",
   "content_scripts": [{
-    "js": ["jquery-3.2.0.min.js", "content.js"],
+    "js": ["jquery-3.2.0.min.js", "js/content.js"],
     "matches": ["*://*/jobs*"],
     "run_at": "document_end"
     }, {
-    "js": ["jquery-3.2.0.min.js", "content.js"],
+    "js": ["jquery-3.2.0.min.js", "js/content.js"],
     "matches": ["*://*.jobvite.com/*"],
     "run_at": "document_end"
     }, {
-      "js": ["jquery-3.2.0.min.js", "content.js"],
+      "js": ["jquery-3.2.0.min.js", "js/content.js"],
       "matches": ["*://*/*/careers/*"],
       "run_at": "document_end"
     }, {
-      "js": ["jquery-3.2.0.min.js", "content.js"],
+      "js": ["jquery-3.2.0.min.js", "js/content.js"],
       "matches": ["*://*.boards.greenhouse.io/*"],
       "run_at": "document_end"
   }],
