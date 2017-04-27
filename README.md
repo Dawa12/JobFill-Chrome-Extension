@@ -12,3 +12,9 @@ Unpack zip and then upload as extension. Make sure to check off "Developer Mode"
 
 ![image](https://github.com/Dawa12/JobFill/blob/master/extension_demo.gif?raw=true)
 
+# Contribute
+I've outlined some things I'd like to add to the extension on the Issues section. 
+
+Let me know if you're interested in contributing and I'll assign you to an issue, and accept your PR.
+
+
