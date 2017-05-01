@@ -12,7 +12,7 @@ IMPORTANT: Don't store anything confidential as this extension utilizes Chrome S
 
 2) Visit chrome extensions tab: [chrome://extensions/](chrome://extensions/)
 
-3) Unpack zip and then upload as extension. Make sure to check off "Developer Mode"
+3) Unpack zip and then upload as extension. Make sure to check the "Developer Mode" setting on
 
 ![image](https://github.com/Dawa12/JobFill/blob/master/extension_demo.gif?raw=true)
 
