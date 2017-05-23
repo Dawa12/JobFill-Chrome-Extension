@@ -1,14 +1,14 @@
 // sample job application: https://boards.greenhouse.io/smartling/jobs/550007#.WOuqcRIrLdT
 
 // Save it using the Chrome extension storage API.
-console.log('loading Jobvite chrome extension..content.js loading');
+// console.log('loading Jobvite chrome extension...'); 
 
 function fillPageFields() {
-  console.log('populating form fields!!!');
+  // console.log('populating form fields!!!');
 
   chrome.storage.sync.get(null, function(items) {
-    console.log(`items stringify: ${JSON.stringify(items)}`);
-    console.log(`items.firstName: ${JSON.stringify(items.firstName)}`);
+    // console.log(`items stringify: ${JSON.stringify(items)}`);
+    // console.log(`items.firstName: ${JSON.stringify(items.firstName)}`);
 
     $( "input[name*='first']" ).eq(0).val(items.firstName)
     $( "input[name*='last']" ).eq(0).val(items.lastName)
