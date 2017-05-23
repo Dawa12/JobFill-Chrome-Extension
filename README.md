@@ -1,7 +1,7 @@
 # Automate Job Applications!
 This is a Chrome Extension to Help you auto populate job application forms. Everything from form fields to drop-downs.
 
-This extension will automatically fill form fileds and dropdowns on sites that include forms with job related fileds. Fill in your job application credentials once on the extension and save yourself much time down the line.
+This extension will automatically fill form fields and dropdowns on sites that include forms with job related fileds. Fill in your job application credentials once on the extension and save yourself much time down the line.
 
 IMPORTANT: Don't store anything confidential as this extension utilizes Chrome Storage, which is not encrypted (e.g passwords). Basic job credentials should be totally fine. More on [Chrome Storage](https://developer.chrome.com/extensions/storage)
 
