@@ -1,31 +1,18 @@
 {
   "manifest_version": 2,
-
   "name": "JobFill",
   "version": "1",
   "description": "Extension will autopopulate job applications",
   "content_scripts": [{
     "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
-    "matches": ["*://*/jobs*"],
+    "matches": ["<all_urls>","http://*/*","https://*/*"],
     "run_at": "document_end"
-    }, {
-    "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
-    "matches": ["*://*.jobvite.com/*"],
-    "run_at": "document_end"
-    }, {
-      "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
-      "matches": ["*://*/*/careers/*"],
-      "run_at": "document_end"
-    }, {
-      "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
-      "matches": ["*://*.boards.greenhouse.io/*"],
-      "run_at": "document_end"
   }],
   "browser_action": {
    "default_popup": "popup.html"
   },
   "permissions": [
      "storage",
-     "*://*.boards.greenhouse.io/*"
+    "<all_urls>"
    ]
 }
