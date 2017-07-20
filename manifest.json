@@ -5,7 +5,7 @@
   "description": "Extension will autopopulate job applications",
   "content_scripts": [{
     "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
-    "matches": ["<all_urls>","http://*/*","https://*/*"],
+    // "matches": ["<all_urls>","http://*/*","https://*/*"],
     "run_at": "document_end"
   }],
   "browser_action": {
