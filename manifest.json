@@ -5,13 +5,15 @@
   "description": "Extension will autopopulate job applications",
   "content_scripts": [{
     "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
-    "matches": ["*://*.greenhouse.io/*", "*://*.lever.co/*", ""],
+    // "matches": ["*://*.greenhouse.io/*", "*://*.lever.co/*", ""],
+    "matches": ["*://*.greenhouse.io/*"],
     "run_at": "document_end"
   }],
   "browser_action": {
    "default_popup": "popup.html"
   },
   "permissions": [
-     "storage"
+     "storage",
+     "activeTab"
    ]
 }
