@@ -1,19 +1,31 @@
 {
-  "manifest_version": 2,
   "name": "JobFill",
   "version": "1",
   "description": "Extension will autopopulate job applications",
-  "content_scripts": [{
-    "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
-    // "matches": ["*://*.greenhouse.io/*", "*://*.lever.co/*", ""],
-    "matches": ["*://*.greenhouse.io/*"],
-    "run_at": "document_end"
-  }],
-  "browser_action": {
-   "default_popup": "popup.html"
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
+      "matches": ["*://*.greenhouse.io/*", "*://*.lever.co/*"],
+      // "matches": ["*://*.greenhouse.io/*"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
   },
-  "permissions": [
-     "storage",
-     "activeTab"
-   ]
+  // "commands": {
+  //   "fill-form": {
+  //     "suggested_key": {
+  //       "default": "Ctrl+Shift+X",
+  //       "mac": "Command+Shift+X"
+  //     },
+  //     "description": "Fill job application on current tab"
+  //   }
+  // },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"]
 }
