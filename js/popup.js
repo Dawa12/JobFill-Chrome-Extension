@@ -1,11 +1,10 @@
-window.onload = function () {
+window.onload = function() {
   // loop values array and store each value of input to local storage
 
   var button = document.getElementById('extButton');
 
   button.addEventListener('click', function() {
     saveFields();
-
   });
 
   fillPopupFields();
@@ -46,10 +45,8 @@ window.onload = function () {
       for (var i = 0; i < fields.length; i++) {
         console.log(`fields[i].name: ${fields[i].name}`);
         const name = fields[i].name;
-        fields[i].value = items[name]
+        fields[i].value = items[name];
       }
     });
   }
-}
-
-
+};
