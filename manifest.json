@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "js": ["./js/jquery-3.2.1.min.js", "js/content.js"],
-      "matches": ["*://*.greenhouse.io/*", "*://*.lever.co/*"],
+      "matches": ["*://*.boards.greenhouse.io/*", "*://*.lever.co/*"],
       "run_at": "document_end"
     }
   ],
